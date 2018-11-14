@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_grey"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/spacing_larger"
+        android:layout_marginTop="@dimen/spacing_total_top"
+        android:src="@drawable/ic_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="学生信息管理系统"
+        android:textColor="#202020"
+        android:textSize="@dimen/font_largest"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_largest"
+        android:layout_marginRight="@dimen/spacing_largest"
+        android:layout_marginTop="@dimen/spacing_larger"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/spacing_largest"
+            android:layout_height="@dimen/spacing_largest"
+            android:layout_margin="@dimen/spacing_normal"
+            android:src="@drawable/icon_my_account"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="安卓班孙老师"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_largest"
+        android:layout_marginRight="@dimen/spacing_largest"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/spacing_largest"
+            android:layout_height="@dimen/spacing_largest"
+            android:layout_margin="@dimen/spacing_normal"
+            android:src="@drawable/icon_password"/>
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="初始密码为1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_total_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_login_log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_largest"
+            android:background="@drawable/act_log_in_button_style"
+            android:paddingLeft="@dimen/spacing_largest"
+            android:paddingRight="@dimen/spacing_largest"
+            android:text="log  In"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_large"/>
+
+    </LinearLayout>
+</LinearLayout>

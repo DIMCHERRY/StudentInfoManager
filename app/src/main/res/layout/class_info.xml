@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MainTitleStyle"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_edit_back"
+                android:layout_width="@dimen/button_height_small"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginLeft="@dimen/spacing_smaller"
+                android:background="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="班级信息编辑"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_largest"
+                />
+
+            <Button
+                android:id="@+id/btn_edit_sure"
+                android:layout_width="@dimen/button_height_small"
+                android:layout_height="@dimen/button_height_small"
+                android:layout_marginRight="@dimen/spacing_smaller"
+                android:background="@drawable/ic_sure"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_largest"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_normal"
+            android:paddingRight="@dimen/spacing_normal"
+            >
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="班级名称"
+                    />
+
+                <EditText
+                    android:id="@+id/et_edit_number"
+                    style="@style/StuInfoDetail"
+                    android:digits="0123456789"
+                   android:text="软件工程"/>
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="班级人数"
+                    />
+
+                <EditText
+                    android:id="@+id/et_edit_name"
+                    style="@style/StuInfoDetail"
+                    android:text="50"/>
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+
+
+            <View
+                style="@style/WireThinHorizontal"/>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tv_edit_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_largest"
+            android:background="@drawable/selector_white_button_style"
+            android:paddingBottom="@dimen/spacing_largest"
+            android:paddingLeft="@dimen/spacing_largest"
+            android:paddingTop="@dimen/spacing_largest"
+            android:text="删除该班级信息"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/font_larger"/>
+    </LinearLayout>
+</ScrollView>

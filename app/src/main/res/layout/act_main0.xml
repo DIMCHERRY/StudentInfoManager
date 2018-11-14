@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/id_toolbar"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/normal_blue"
+            app:titleTextColor="#fff"
+            android:elevation="@dimen/spacing_smaller"
+            />
+
+        <Button
+            android:id="@+id/spm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:background="#FF5000"
+            android:text="软件工程"
+            android:textSize="35dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/spm"
+            android:layout_marginTop="210dp"
+            android:background="#FF5000"
+            android:text="网络工程"
+            android:textSize="35dp" />
+
+       <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="205dp"
+            android:background="#FF5000"
+            android:text="数字媒体"
+            android:textSize="35dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="105dp"
+            android:background="#FF5000"
+            android:text="信息安全"
+            android:textSize="35dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/spacing_largest"
+            android:id="@+id/fabtn_main_add"
+            android:src="@drawable/ic_add_float"
+            app:elevation="@dimen/spacing_normal"
+            app:pressedTranslationZ="@dimen/spacing_larger"
+            app:backgroundTint="#ffae2b"
+            app:rippleColor="#252525"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_navigation_view"
+        app:menu="@menu/menu_drawer"
+        />
+
+</android.support.v4.widget.DrawerLayout>
